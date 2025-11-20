@@ -1,0 +1,129 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: Inter, system-ui;
+  background: linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
+  color: #e6eef8;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+
+nav a {
+  color: #bcd7ff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover { color: #fff; }
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* INTRO CARD */
+.intro {
+  background: rgba(255,255,255,0.03);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* IMAGE CARD */
+.cardslide-up {
+  background: rgba(255,255,255,0.03);
+  padding: 82px;
+border-radius: 18px;
+  text-align: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.quick-stats {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.stat {
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+/* GRID SECTIONS */
+.grid {
+  margin-top: 30px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.feature {
+  background: rgba(255,255,255,0.03);
+  padding: 18px;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+.contact-flex {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 240px;
+  background: rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #9fb9e6;
+}
+
+/* ANIMATIONS */
+.fade-in { animation: fadeIn 1.2s ease forwards; opacity: 0; }
+@keyframes fadeIn { to { opacity: 1; } }
+
+.slide-up { animation: slideUp .9s ease forwards; opacity: 0; }
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hover-scale { transition: transform .2s; }
+.hover-scale:hover { transform: scale(1.07); }

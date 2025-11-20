@@ -9,6 +9,7 @@ body {
   background: linear-gradient(180deg,#0f1724 0%, #0b1220 100%);
   color: #e6eef8;
   line-height: 1.5;
+  display: f;
 }
 
 .wrap {
@@ -37,11 +38,12 @@ nav a {
 nav a:hover { color: #fff; }
 
 /* HERO */
-.hero {
-  display: grid;
+.hero {max-width: 7600px;
   grid-template-columns: 1fr 340px;
   gap: 28px;
   align-items: start;
+  display: flex;
+  flex-direction: column;
 }
 
 /* INTRO CARD */
@@ -125,7 +127,7 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 @media (max-width: 768px) {
-  /* tablets and phones */
+
   .container {
     padding: 10px;
   }

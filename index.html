@@ -3,111 +3,261 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Adeniyi Umar Adedayo — Portfolio</title>
-
-  <!-- Link CSS -->
+  <title>Adeniyi Umar Adedayo — Web Developer & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="my.css" />
 </head>
-
 <body>
-  <div class="wrap fade-in">
 
-    <header>
-      <div class="brand slide-up">
-      
-        <div>
-          <div style="font-weight:600px; font-size: 50px;">Adeniyi Umar Adedayo</div>
-          <div style="font-size:0.85rem;color:#9fb9e6;margin-top:4px;">Data Analyst • AI Engineer • Developer</div>
+  <!-- Floating cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Background grid -->
+  <div class="bg-grid"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+    
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#services" class="mob-link">Services</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title reveal">
+          <span class="line">Adeniyi</span>
+          <span class="line accent-line">Umar</span>
+          <span class="line">Adedayo</span>
+        </h1>
+        <p class="hero-sub reveal">Data Analyst <span class="sep">×</span> ESG Specialist <span class="sep">×</span> Business Intelligence</p>
+        <p class="hero-desc reveal">
+          I am a data and sustainability professional focused on transforming complex information into clear, actionable insights that drive better decision-making. I analyze data, develop performance reports, track key business and sustainability metrics, and create clear documentation that helps organizations improve transparency, efficiency, and strategic outcomes.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn-primary">Let's work together</a>
+          <a href="#services" class="btn-ghost">See my work ↓</a>
         </div>
       </div>
 
-      <nav class="slide-up">
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+      <div class="hero-visual reveal">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <img src="profile.jpg" alt="Adeniyi Umar Adedayo" class="avatar-img" />
+          <div class="avatar-tag">
+            <span class="tag-dot"></span> Open to work
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <main>
-      <section class="hero">
+    <!-- Floating stats -->
+    <div class="stats-row reveal">
+      <div class="stat-item">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Tech Skills</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Years Learning</span>
+      </div>
+    </div>
+  </section>
 
-        <div class="intro slide-up">
-          <span class="kicker">About</span>
-          <h1>Data Analytics & Intelligent Systems Specialist</h1>
-          <p class="lead">
-            I work across data analytics, machine learning, and intelligent automation to transform raw information into clear, actionable insights. I focus on building simple, efficient analytical workflows and leveraging AI tools to solve real operational problems. I’m currently exploring projects in predictive modelling, data engineering, and applied AI systems that improve decision-making, streamline processes, and unlock new levels of performance.
-          </p>
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-tag">What I do</span>
+        <h2 class="section-title">Services</h2>
+      </div>
 
-          <div style="margin-top:18px;color:#9fb9e6;font-size:0.95rem;">
-            <strong>Recent:</strong> Created an AI model that explains data validity and highlights outliers.
+      <div class="services-grid">
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="service-icon">📊</div>
+          <h3>Data Analytics</h3>
+          <p>Transforming raw data into clear insights via cleaning, analysis, dashboards, and KPI reporting to support smarter business decisions.</p>
+          <div class="service-tags">
+            <span>SQL</span><span>Tableau</span><span>Excel</span>
           </div>
         </div>
 
-        <aside class="cardslide-up">
-          <div class="avatar" style="padding:0;overflow:hidden;">
-            <img src="profile.jpg_small" alt="Profile Image"
-                 style="max-width:500%;height:100%;object-fit:cover;border-radius:18px; text-align: center;">
+        <div class="service-card reveal" data-delay="100">
+          <div class="service-icon">🌱</div>
+          <h3>ESG Reporting</h3>
+          <p>Designing ESG reporting and sustainability dashboards that support compliance, transparency, and stakeholder impact tracking.</p>
+          <div class="service-tags">
+            <span>ESG</span><span>Reporting</span><span>Data</span>
           </div>
-
-        </aside>
-
-      </section>
-
-      <section class="grid" id="projects">
-        <div class="feature slide-up">
-          <h4>Prominent Skills</h4>
-          <p>🔹 Excel<br>🔹 SQL<br>🔹 Tableau<br>🔹 HTML<br>🔹 CSS<br>🔹 Python<br>🔹 Langchain</p>
-          <h4 style="margin-top: 30px;">Work Experience</h4>
-          <p>🔹Air Traffic Controller Intern -
-          <p>Nigerian Airspace Management Agency (NAMA)</p>    
-          <p>🔹Analytics and Reports Team -</p>    
-          <p>Unique Farms and Business Solutions</p>            
- 
-</p>
         </div>
 
-        <div class="feature slide-up">
-          <h4>Services</h4>
-          <p>🔹 Data Analytics & Insights: I transform raw data into clear insights through cleaning, analysis, dashboards, and KPI reporting to support smarter business decisions.<br>
-            <br>🔹 Machine Learning & Predictive Modelling: Building and training ML models for classification, prediction, and clustering Model evaluation, optimisation, and deployment Developing data-driven solutions for forecasting and risk assessment<br>
-            <br>🔹 Technical Documentation & Reporting: Preparing clear analytical reports for stakeholders Translating technical findings into simple, actionable insights Creating documentation for AI/ML models and workflows</p>
-        </div>
-
-        <div class="feature slide-up">
-          <h4>Certifications</h4>
-          <p>🔹 B.Sc. Transport Planning – Olabisi Onabanjo University<br>
-             🔹 Data Analytics – Cisco Networking Academy<br>
-             🔹 Frontend Development – Anjonix Coding Institue<br>
-             🔹 Python & AI Engineering – SMP Cohort 2</p>
-        </div>
-      </section>
-
-      <section id="contact" style="margin-top:20px;">
-        <div class="contact-flex slide-up">
-          
-          <div class="contact-card">
-            <h3>Contact</h3>
-            <p>LinkedIn :<a href="https://www.linkedin.com/in/adeniyi-umar-adedayo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">https://www.linkedin.com/in/adeniyi-umar-adedayo</a></p>
-            <p>Email: <a href="mailto:adeniyiumar3@gmail.com">adeniyiumar3@gmail.com</a></p>
-            <p>Phone: 09024643756</p>
+        <div class="service-card reveal" data-delay="200">
+          <div class="service-icon">📝</div>
+          <h3>Technical Documentation</h3>
+          <p>Preparing clear analytical reports for stakeholders. Translating technical findings into simple, actionable insights and creating AI/ML model documentation.</p>
+          <div class="service-tags">
+            <span>Reports</span><span>Workflows</span><span>Insights</span>
           </div>
-
-          <div class="contact-card">
-            <h3>Projects</h3>
-            <p>GitHub Repository: <a href=""></a></p>
-          </div>
-
         </div>
-      </section>
 
-      <footer>
-        © <span id="year"></span> Umar — Built with ❤️
-      </footer>
-    </main>
+        <div class="service-card reveal" data-delay="300">
+          <div class="service-icon">🤖</div>
+          <h3>AI & Machine Learning</h3>
+          <p>Building and training ML models for classification, prediction, and clustering. Developing data-driven solutions for forecasting and intelligent automation.</p>
+          <div class="service-tags">
+            <span>Python</span><span>ML</span><span>Analytics</span>
+          </div>
+        </div>
 
-  </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Link JS -->
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-tag">What I know</span>
+        <h2 class="section-title">Skills & Background</h2>
+      </div>
+
+      <div class="skills-layout">
+
+        <div class="skills-col reveal">
+          <h3 class="col-heading">Technical Skills</h3>
+          <div class="skill-grid">
+            <div class="skill-box">
+              <div class="skill-thumb"><img src="excel.jpg" alt="Excel logo" /></div>
+              <span>Excel</span>
+            </div>
+            <div class="skill-box">
+              <div class="skill-thumb"><img src="sql.jpg" alt="SQL logo" /></div>
+              <span>SQL</span>
+            </div>
+            <div class="skill-box">
+              <div class="skill-thumb"><img src="powerbi.jpg" alt="Power BI logo" /></div>
+              <span>Power BI</span>
+            </div>
+            <div class="skill-box">
+              <div class="skill-thumb"><img src="tableau.jpg" alt="Tableau logo" /></div>
+              <span>Tableau</span>
+            </div>
+            <div class="skill-box">
+              <div class="skill-thumb"><img src="python.jpg" alt="Python logo" /></div>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs-col reveal">
+          <h3 class="col-heading">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon">🎓</div>
+              <div>
+                <div class="cert-title">B.Sc. Transport Planning</div>
+                <div class="cert-school">Olabisi Onabanjo University</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">📡</div>
+              <div>
+                <div class="cert-title">Data Analytics</div>
+                <div class="cert-school">Cisco Networking Academy</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🌍</div>
+              <div>
+                <div class="cert-title">ESG Reporting</div>
+                <div class="cert-school">ESG Institute</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon">🧠</div>
+              <div>
+                <div class="cert-title">Python & AI Engineering</div>
+                <div class="cert-school">SMP Cohort 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">I'm open to freelance projects, collaborations, and full-time opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <a href="mailto:adeniyiumar3@gmail.com" class="contact-card reveal" data-delay="0">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">adeniyiumar3@gmail.com</div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/adeniyi-umar-adedayo" target="_blank" class="contact-card reveal" data-delay="100">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">adeniyi-umar-adedayo</div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="tel:09024643756" class="contact-card reveal" data-delay="200">
+          <div class="contact-icon">📞</div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">09024643756</div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-text">
+        <span class="footer-name">Built by Adeniyi Umar Adedayo</span>
+        <span class="footer-copy">© <span id="year"></span></span>
+      </div>
+    </div>
+  </footer>
+
   <script src="my.js"></script>
-
 </body>
 </html>
